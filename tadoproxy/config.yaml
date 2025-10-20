@@ -20,6 +20,9 @@ stage: stable
 #ingress_port: 7070
 init: false
 image: ghcr.io/s1adem4n/tado-api-proxy
+options:
+  EMAIL: you@email.com
+  PASSWORD: yourpassword
 schema: 
   EMAIL: you@email.com
   PASSWORD: yourpassword
