@@ -32,6 +32,7 @@ map:
   - type: share
     read_only: False
     path: /config
+  - share:rw
 uart: true
 #webui: http://[HOST]:[PORT:7070]/
 ports:
