@@ -29,10 +29,6 @@ schema:
   password: str
 host_network: true
 map: 
-  - type: addon_config
-    read_only: False
-  - type: homeassistant_config
-    read_only: False
   - config:rw
   - share:rw
 uart: true
