@@ -21,11 +21,11 @@ stage: stable
 init: false
 image: ghcr.io/s1adem4n/tado-api-proxy
 options:
-  EMAIL: you@email.com
-  PASSWORD: yourpassword
+  email1: you@email.com
+  password1: yourpassword
 schema: 
-  EMAIL: you@email.com
-  PASSWORD: yourpassword
+  email: you@email.com
+  password: yourpassword
 host_network: true
 map: 
   - type: addon_config
