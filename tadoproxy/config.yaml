@@ -17,13 +17,10 @@ legacy: false
 init: false
 host_network: true
 panel_icon: mdi:ev-station
-
 image: ghcr.io/s1adem4n/tado-api-proxy
-
 options:
   email: you@email.com
   password: yourpassword
-
 schema:
   email: str
   password: str
@@ -33,7 +30,6 @@ ports:
   8080/tcp: 8080
 ports_description:
   8080/tcp: "Tado Proxy API"
-
 map:
   - config:rw
   - share:rw
