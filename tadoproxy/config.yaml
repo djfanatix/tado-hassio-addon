@@ -30,8 +30,9 @@ schema:
 host_network: true
 
 map:
-  - config:rw
-  - share:rw
+  - type: bind
+    source: /share/tado
+    target: /config
 uart: true
 #webui: http://[HOST]:[PORT:7070]/
 ports:
