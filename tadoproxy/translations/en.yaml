@@ -1,7 +1,7 @@
 configuration:
-  EMAIL:
+  email:
     name: "Tado Email"
     description: "Tado Email"
-  PASSWORD:
+  password:
     name: "Tado Password"
     description: "Tado Password"
