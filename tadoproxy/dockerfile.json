@@ -1,8 +1,11 @@
 # Dockerfile
 FROM ghcr.io/s1adem4n/tado-api-proxy:latest
 
-# Set the cookie file to a writable location inside the container
+# Ensure cookie file is stored in a writable location
 ENV COOKIE_FILE=/data/cookies.json
 
-# Just run the binary from the original image
-CMD ["/tado-api-proxy"]
+# (Optional) show this in logs for debugging
+RUN echo "COOKIE_FILE set to $COOKIE_FILE"
+
+# Just run the proxy binary
+ENTRYPOINT ["/tado-api-proxy"]
