@@ -28,8 +28,7 @@ schema:
   email: str
   password: str
 host_network: true
-environment:
-  - COOKIE_FILE=/data/cookies.json
+
 map:
   - config:rw
   - share:rw
