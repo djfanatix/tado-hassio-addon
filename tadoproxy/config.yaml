@@ -24,8 +24,8 @@ options:
   email1: you@email.com
   password1: yourpassword
 schema: 
-  email: you@email.com
-  password: yourpassword
+  email: str
+  password: str
 host_network: true
 map: 
   - type: addon_config
