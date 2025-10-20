@@ -16,6 +16,7 @@ panel_admin: false
 boot: auto
 legacy: true
 stage: stable
+host_network: true
 #ingress: true
 #ingress_port: 7070
 init: false
