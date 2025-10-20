@@ -29,7 +29,11 @@ schema:
   password: str
 host_network: true
 map:
-  - share:rw
+  - type: share
+    read_only: False
+    path: /config
+  - type: homeassistant_config
+    read_only: False
 uart: true
 #webui: http://[HOST]:[PORT:7070]/
 ports:
