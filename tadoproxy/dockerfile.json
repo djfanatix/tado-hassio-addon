@@ -1,5 +1,10 @@
 # Dockerfile
 FROM ghcr.io/s1adem4n/tado-api-proxy:latest
 
+ENV TOKEN_PATH=/share/token.json
+ENV COOKIES_PATH=/share/cookies.json
+
+CMD ["/tado-api-proxy"]
+
 # Just run the proxy binary
 ENTRYPOINT ["/tado-api-proxy"]
