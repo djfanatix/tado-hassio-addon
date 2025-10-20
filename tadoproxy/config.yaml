@@ -29,7 +29,7 @@ schema:
   password: str
 host_network: true
 map:
-  - share:tado:rw
+  - share:rw
 uart: true
 #webui: http://[HOST]:[PORT:7070]/
 ports:
