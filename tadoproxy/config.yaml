@@ -1,9 +1,9 @@
 ---
-name: tadoproxy
-version: latest
-slug: djfanatix-tadoproxy
-description: Tado Proxy
-url: https://github.com/djfanatix/tado-hassio-addon
+name: Tado Proxy
+version: "latest"
+slug: tadoproxy
+description: "Tado API Proxy for Home Assistant"
+url: "https://github.com/s1adem4n/tado-api-proxy"
 arch: 
   - armhf
   - armv7
@@ -11,30 +11,28 @@ arch:
   - amd64
   - i386
 startup: application
-panel_icon: mdi:ev-station
-panel_admin: false
 boot: auto
-legacy: true
 stage: stable
-host_network: true
-#ingress: true
-#ingress_port: 7070
+legacy: false
 init: false
+host_network: true
+panel_icon: mdi:ev-station
+
 image: ghcr.io/s1adem4n/tado-api-proxy
+
 options:
-  email1: you@email.com
-  password1: yourpassword
-schema: 
+  email: you@email.com
+  password: yourpassword
+
+schema:
   email: str
   password: str
-host_network: true
-map: 
-  - config:rw
-  - share:rw
-uart: true
-#webui: http://[HOST]:[PORT:7070]/
+
 ports:
   8080/tcp: 8080
 ports_description:
-  8080/tcp: "Chromium"
+  8080/tcp: "Tado Proxy API"
 
+map:
+  - config:rw
+  - share:rw
