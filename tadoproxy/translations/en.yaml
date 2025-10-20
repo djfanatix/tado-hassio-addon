@@ -1,7 +1,7 @@
 configuration:
-  config_file:
-    name: ""Tado Email"
+  EMAIL:
+    name: "Tado Email"
     description: "Tado Email"
-  sqlite_file:
+  PASSWORD:
     name: "Tado Password"
     description: "Tado Password"
