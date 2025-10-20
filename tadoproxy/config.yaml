@@ -28,11 +28,8 @@ schema:
   email: str
   password: str
 host_network: true
-
 map:
-  - type: bind
-    source: /share/tado
-    target: /config
+  - share:tado:rw
 uart: true
 #webui: http://[HOST]:[PORT:7070]/
 ports:
